@@ -1,0 +1,2 @@
+# Facial-Expression-Recognition-Using-Hybrid-Model
+Facial expression recognition is a crucial task in computer vision with numerous applications, including emotion analysis, human-computer interaction, and sentiment analysis. This project aims to build a robust facial expression recognition system that leverages both deep learning and traditional computer vision approaches for enhanced performance.
