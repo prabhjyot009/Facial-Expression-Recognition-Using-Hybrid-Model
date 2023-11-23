@@ -6,7 +6,7 @@ import os
 from tensorflow.keras import models
 from cv2 import imread
 
-model=models.load_model('Facial_Expression_classification.keras')
+model=models.load_model('Facial_Expression_classification_CNN_LSTM.keras')
 emotions=[['angry'],
  ['disgust'],
  ['fear'],
@@ -28,4 +28,4 @@ stn='Emotion is '+ str(outcome[0])
 st.markdown(stn)
 
 image_name = os.path.basename(image_path)
-st.image('Facial_Images/train/neutral/' + image_name, width=300)
+st.image('Google_Images/' + image_name, width=300)
