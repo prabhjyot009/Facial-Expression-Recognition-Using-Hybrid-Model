@@ -4,6 +4,7 @@ import numpy as np
 import cv2
 import os
 from tensorflow.keras import models
+from cv2 import imread
 
 model=models.load_model('Facial_Expression_classification.keras')
 emotions=[['angry'],
@@ -23,8 +24,8 @@ image=np.invert(np.array([image]))
 
 output=np.argmax(model.predict(image))
 outcome=emotions[output]
-stn='Emotion is '+str(outcome)
+stn='Emotion is '+ str(outcome[0])
 st.markdown(stn)
 
 image_name = os.path.basename(image_path)
-st.image('Google_Images/'+image_name,width=300)
+st.image('Facial_Images/train/neutral/' + image_name, width=300)
